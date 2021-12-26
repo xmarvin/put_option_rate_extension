@@ -1,0 +1,24 @@
+{
+"manifest_version": 2,     //required
+"content_scripts": [
+  {
+    "matches": [
+      "https://finance.yahoo.com/quote/*/options*"
+    ],
+    "js": ["content.js"]
+  }
+],
+"version": "1.0",               //required
+"name": "PutOptionRate",   //required
+"description": "Shows put option rate",
+"icons": {
+    	"16": "images/puppy16.png",
+    	"48": "images/puppy48.png",
+    	"128": "images/puppy.png"
+    },
+"browser_action":
+	{
+	"default_icon": "images/puppy.png",
+  "default_popup": "popup.html"
+	}
+}
